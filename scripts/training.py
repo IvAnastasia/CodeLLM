@@ -32,9 +32,7 @@ NUM_WARMUP_STEPS=5
 EVAL_FREQ=10                    
 SAVE_FREQ=10           
 LOG_FREQ=10
-OUTPUT_DIR="peft-starcoder-lora-a100" 
-BF16=True                        
-FP16=False                    
+OUTPUT_DIR="peft-starcoder-lora-a100"                     
 
 FIM_RATE=0.5                    
 FIM_SPM_RATE=0.5                
