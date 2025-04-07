@@ -42,8 +42,7 @@ LORA_ALPHA=32
 LORA_DROPOUT=0.0                 
 LORA_TARGET_MODULES="c_proj,c_attn,q_attn,c_fc,c_proj"    
 
-USE_NESTED_QUANT=True           
-BNB_4BIT_COMPUTE_DTYPE="bfloat16"
+USE_NESTED_QUANT=True
 
 SEED=0
 
