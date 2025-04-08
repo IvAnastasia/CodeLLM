@@ -2,7 +2,7 @@
 
 This repository contains code and configuration details for fine-tuning the [bigcode/starcoderbase-1b](https://huggingface.co/bigcode/starcoderbase-1b) model using Parameter-Efficient Fine-Tuning (PEFT) with LoRA, Fill-in-the-Middle (FIM) augmentation, and 4-bit quantized training.
 
-The fine tuning is done on the scilit-learn Python library on the task of code completion.
+The fine tuning is done on the **scilit-learn Python library** on the task of **code completion**.
 
 This repository includes:
 - ```scripts``` folder with scripts for data scrapping and model fine tuning
@@ -63,7 +63,7 @@ The training and validation losses are presented in the Figure:
 
 <img title="A training and validation losses of model fine tuning" src="loss.jpg">
 
-The training process is quite effective given the limited resources available.
+**The training process is quite effective given the limited resources available.**
 
 With additional resources, I would prioritize question-answering capabilities based on code snippets, which serves as an effective proxy for assessing an LLM's code comprehension. The dataset could be generated using advanced models like Claude or GPT-4, which my preliminary testing shows produces sufficient quality. The approach would involve fine-tuning models like CodeX or CodeLLama on paired data of code+question and answer.
 
