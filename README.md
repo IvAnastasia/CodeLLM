@@ -4,6 +4,11 @@ This repository contains code and configuration details for fine-tuning the [big
 
 The fine tuning is done on the scilit-learn Python library on the task of code completion.
 
+This repository includes:
+- ```scripts``` folder with scripts for data scrapping and model fine tuning
+- ```cleaned_dataset.jsonl``` the dataset
+- ```loss.jpg``` the training and validation losses
+
 ## Setup
 
 ### Model & Tokenizer
@@ -58,7 +63,9 @@ The training and validation losses are presented in the Figure:
 
 <img title="A training and validation losses of model fine tuning" src="loss.jpg">
 
-This repository includes:
-- ```scripts``` folder with scripts for data scrapping and model fine tuning
-- ```cleaned_dataset.jsonl``` the dataset
-- ```loss.jpg``` the training and validation losses
+The training process is quite effective given the limited resources available.
+
+With additional resources, I would prioritize question-answering capabilities based on code snippets, which serves as an effective proxy for assessing an LLM's code comprehension. The dataset could be generated using advanced models like Claude or GPT-4, which my preliminary testing shows produces sufficient quality. The approach would involve fine-tuning models like CodeX or CodeLLama on paired data of code+question and answer.
+
+For evaluating answer accuracy across various valid linguistic expressions, I recommend using Natural Language Inference (NLI) techniques with a lightweight model. This approach would allow us to determine accuracy based on bidirectional entailment between the model's answer and ground truth.
+
