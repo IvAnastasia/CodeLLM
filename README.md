@@ -52,7 +52,11 @@ lora_config = LoraConfig(
 )
 ```
 
-## 
+## Results
+
+The training and validation losses are presented in the Figure:
+
+<img title="A training and validation losses of model fine tuning" src="loss.jpg">
 
 This repository includes:
 - ```scripts``` folder with scripts for data scrapping and model fine tuning
